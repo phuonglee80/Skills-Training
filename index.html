@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Coach Phương AI - Mở Khóa Tương Lai Với AI</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Custom Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#31476b",
+              "surface-tint": "#0c56d0",
+              "inverse-on-surface": "#eff1f3",
+              "on-primary-fixed-variant": "#0040a2",
+              "on-primary": "#ffffff",
+              "surface": "#f7f9fb",
+              "surface-variant": "#e0e3e5",
+              "outline-variant": "#c3c6d6",
+              "tertiary-container": "#006378",
+              "surface-container-low": "#f2f4f6",
+              "primary-container": "#0052cc",
+              "on-primary-fixed": "#001848",
+              "surface-bright": "#f7f9fb",
+              "inverse-primary": "#b2c5ff",
+              "tertiary-fixed-dim": "#3cd7ff",
+              "primary-fixed": "#dae2ff",
+              "on-secondary-fixed": "#001b3d",
+              "secondary-fixed": "#d6e3ff",
+              "primary": "#003d9b",
+              "on-surface": "#191c1e",
+              "background": "#f7f9fb",
+              "primary-fixed-dim": "#b2c5ff",
+              "on-tertiary-container": "#7de0ff",
+              "on-surface-variant": "#434654",
+              "error": "#ba1a1a",
+              "surface-container-high": "#e6e8ea",
+              "surface-container": "#eceef0",
+              "outline": "#737685",
+              "on-secondary-container": "#445a7f",
+              "secondary": "#495f84",
+              "on-tertiary-fixed": "#001f27",
+              "tertiary-fixed": "#b4ebff",
+              "surface-dim": "#d8dadc",
+              "on-error": "#ffffff",
+              "on-background": "#191c1e",
+              "on-secondary": "#ffffff",
+              "secondary-fixed-dim": "#b1c7f2",
+              "secondary-container": "#bcd2fe",
+              "on-tertiary-fixed-variant": "#004e5f",
+              "tertiary": "#004a5a",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#e0e3e5",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-primary-container": "#c4d2ff",
+              "inverse-surface": "#2d3133",
+              "surface-container-lowest": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(20px);
+      }
+      .hero-gradient {
+        background: linear-gradient(15deg, #003d9b, #0052cc);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold text-blue-800 dark:text-blue-300 font-['Space_Grotesk'] tracking-tight">Coach Phương AI</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-700 font-['Space_Grotesk'] transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-['Space_Grotesk'] hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Courses</a>
+<a class="text-slate-600 dark:text-slate-400 font-['Space_Grotesk'] hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-['Space_Grotesk'] hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-5 py-2 text-blue-700 dark:text-blue-400 font-semibold hover:scale-95 duration-200 transition-all">Login</button>
+<button class="px-6 py-2 hero-gradient text-white rounded-xl font-bold hover:scale-95 duration-200 transition-all">Signup</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-semibold">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                    Học tập tương lai cùng AI
+                </div>
+<h1 class="text-5xl lg:text-7xl font-headline font-bold leading-tight tracking-tighter text-primary">
+                    Mở Khóa Tương Lai Với AI Cùng <span class="text-surface-tint">Coach Phương</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-lg leading-relaxed">
+                    Trang bị kỹ năng tư duy máy tính và sử dụng AI thông minh cho học sinh Việt Nam. Học cách làm chủ công nghệ, không chỉ là người sử dụng.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="px-8 py-4 hero-gradient text-white rounded-xl font-bold text-lg shadow-xl shadow-primary/20 hover:scale-105 transition-transform">Bắt Đầu Ngay</button>
+<button class="px-8 py-4 bg-surface-container-highest text-on-surface rounded-xl font-bold text-lg hover:bg-surface-container-high transition-colors inline-flex items-center gap-2">
+                        Tìm hiểu thêm
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-12 -right-12 w-64 h-64 bg-tertiary-container/10 rounded-full blur-3xl"></div>
+<div class="rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10 aspect-[4/3]">
+<img class="w-full h-full object-cover" data-alt="Modern classroom setting with bright lighting where a diverse group of focused students use laptops to learn advanced AI coding concepts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzSbG_1gC9BgWe-9abhatEMikyXJiLNfzYoz9ergnJiBAHfS2ovO-mzQa4zSdoB4guOCJXEk3ab3CVcE5lD4d78pmfsvca09oh82ZEYf_U6aoeyZwpETH0t3czNMe92f9uws4ZFNzAwpBbg3IKXx28YLzj3CWTT_0vUFkwJj8pvVEzvRV6IAjVu9kZ818My9GzW-5JSxiKK4ddWuHc3q0aYahaETH8oE90OtL5DCQt0JOlwwptQJswUsSpZ1lUcmYXpTxHS9gi27g"/>
+</div>
+</div>
+</section>
+<!-- Why Choose Us - Asymmetric Bento Grid -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-3xl lg:text-5xl font-headline font-bold text-primary mb-6">Tại sao nên học cùng Coach Phương?</h2>
+<p class="text-on-surface-variant max-w-2xl">Chúng tôi không dạy học vẹt, chúng tôi dạy tư duy kiến tạo.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl shadow-sm border-l-4 border-primary group hover:bg-white transition-all">
+<div class="w-14 h-14 bg-primary-fixed rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Cá nhân hóa lộ trình học</h3>
+<p class="text-on-surface-variant text-lg">Mỗi học sinh có một tốc độ và sở thích riêng. Hệ thống AI của chúng tôi điều chỉnh bài học dựa trên sự tiến bộ thực tế của từng em.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm group hover:bg-white transition-all">
+<div class="w-14 h-14 bg-secondary-fixed rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Dự án thực tế</h3>
+<p class="text-on-surface-variant">Học qua hành. Xây dựng ứng dụng AI thật sự ngay từ buổi học đầu tiên.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm group hover:bg-white transition-all">
+<div class="w-14 h-14 bg-tertiary-fixed rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-3xl" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Cố vấn chuyên gia</h3>
+<p class="text-on-surface-variant">Kết nối trực tiếp với các chuyên gia AI hàng đầu để được giải đáp thắc mắc.</p>
+</div>
+<div class="md:col-span-2 bg-tertiary-container p-10 rounded-xl text-white flex flex-col justify-between">
+<div>
+<h3 class="text-3xl font-headline font-bold mb-4">Chứng chỉ uy tín</h3>
+<p class="text-tertiary-fixed opacity-90 text-lg">Sau khi hoàn thành khóa học, học sinh nhận được chứng chỉ có giá trị cho hồ sơ học thuật quốc tế.</p>
+</div>
+<div class="flex items-center gap-4 mt-8">
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-2 border-tertiary-container bg-slate-300 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young diverse male student smiling warmly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfTVOml5FC7HvBdetTnc6Lav8s1gUd-KmA89E7GUN2JONBl64bADVqlgIANxKtkylsqh_nzhhK8j_aaxXoKTb9H6GLKgO8tFk360PWXVBoD2qfZGDwKCpupr1XtapeB8aH37HVEmU4nlYmzc0LZnDfuu92liCR79pRYRpvpG6bKhxShJWmMt7wUa_n39CuJJwz9QasSvJOnZSFrRdsazi4qe7UfdptIbAVeZNKpcUAgD590AvQ04wtIlcYoTlJ8c9W7CMuNQq31vw"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-tertiary-container bg-slate-400 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a friendly professional woman with a soft natural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaujRwNHYDBx_aw3HYSR35CERIkEnWx5oOt4GBW67WKf2QedVQCaT4WAwh7ZC-LOQTjd7TfebiklaZMJZXKh7aPHc8QSLUVyEnmn-mxD4WFClK97xv5CBKsitROkIcRchjfgD0RJscphy7m-mfeG0wp_qqOARuHr4F3U2MCzwHO5DAklTl1HCBro9j4EkamNb6JavrnU05itnI7ADjAsw5HfBzMamF8vc2VRtLbl3216Zcv4cURV6oTGgDnJYpxc01AXAi8S7qNG4"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-tertiary-container bg-primary-container flex items-center justify-center text-xs font-bold">+500</div>
+</div>
+<span class="text-sm font-medium">Học sinh đã tham gia</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Courses Overview -->
+<section class="py-24 max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="text-4xl font-headline font-bold text-primary mb-4">Khóa Học Nổi Bật</h2>
+<p class="text-on-surface-variant max-w-xl">Lựa chọn lộ trình phù hợp với độ tuổi và mục tiêu phát triển của con bạn.</p>
+</div>
+<a class="text-primary font-bold inline-flex items-center gap-2 group" href="#">
+                    Xem tất cả khóa học
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Course Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-56 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Digital representation of neural networks and brain patterns in glowing blue light on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0fSH39GAAtwSVrsEIY7RCTvFMaSbCbdCJ-mbZR7RFbflrJuE8d8B5SZb7lqFsAiKAsZ3cxaatbFuYJNPJ7iogBSDSOocvqJULdXwZrpIkBERFBxMAMmaNpNkfRUJnrm0bhRplm8Uozcm7HGLY3zlTTtgVRym8HrjHR7VWZEVrHevdEIUeZVvRJ-vGPkC2HF7isPxLjF0Fql_UxKZdafJAnhDOM3D9N9x6w5EDFJu48NNxXLM6GwmYT7br_qI2DQRwngjhrwIwWcU"/>
+<div class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur rounded-full text-xs font-bold text-primary">Cơ Bản</div>
+</div>
+<div class="p-8">
+<h4 class="text-xl font-headline font-bold mb-3">Nhập Môn Trí Tuệ Nhân Tạo</h4>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Khám phá thế giới AI thông qua các ví dụ thực tiễn và thú vị dành cho lứa tuổi 10-15.</p>
+<div class="flex items-center justify-between pt-6 border-t border-surface-variant">
+<span class="text-primary font-bold">1.200.000đ</span>
+<button class="text-sm font-bold text-on-surface-variant hover:text-primary transition-colors">Chi tiết</button>
+</div>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-56 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Clean computer screen displaying lines of colorful programming code in a dark mode editor environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEx9WUST2610IzRmzkoC4N0tzD97Sfds23yk6ITP-bCTXWqYmUdrt4QRdMKT7OYSjvsldBdrw4VQobdtI9-veORM9G_w0EOuVgPlJAi1-t3zivQEaRpkfs7-iuK6xPyksZ9QzzfsYF0gZogzBmBIgXJrOkVersKuqWUqHDNRfuToF-XAw_pX5Iix45-HTbGLBYeVeA0NiTsCCyVSHprTisRK-JPBHA15747Li5qrIujYnq_qM0X8raFqJESTTIqdECx87xr_PPgeg"/>
+<div class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur rounded-full text-xs font-bold text-secondary">Nâng Cao</div>
+</div>
+<div class="p-8">
+<h4 class="text-xl font-headline font-bold mb-3">Lập Trình Python &amp; AI</h4>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Học ngôn ngữ lập trình mạnh mẽ nhất thế giới và ứng dụng vào việc xây dựng mô hình AI.</p>
+<div class="flex items-center justify-between pt-6 border-t border-surface-variant">
+<span class="text-primary font-bold">2.500.000đ</span>
+<button class="text-sm font-bold text-on-surface-variant hover:text-primary transition-colors">Chi tiết</button>
+</div>
+</div>
+</div>
+<!-- Course Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-56 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Futuristic glowing circuits and microchips representing technology and advanced computer systems" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxH6dEzjOHV0LFwgDga0qjJP6LmyxKlTC78GhjCK4eu8MPCPq07oTwp3YGNed78cWG3w4Y1fGEEQlPgF0jp06N4qu5GwIxmnBKtmTuflRprFfpp0oud7Ew08t1mDfdpNkB1U81FElWZr4vbOXsZQ52z2JmXgPLT9e3zFrQieaXtP4Jed52YFn7N1846lUP4wK-Z2JbQVFPbNGHBKN1nYnwX1jxSKJd2D943lj7c9syBQQ_xhn7F4_lcuvGX8BX2-WT56X1xLRs9QU"/>
+<div class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur rounded-full text-xs font-bold text-tertiary">Workshop</div>
+</div>
+<div class="p-8">
+<h4 class="text-xl font-headline font-bold mb-3">Đạo Đức &amp; Tương Lai AI</h4>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Thảo luận về cách AI thay đổi xã hội và cách chúng ta sử dụng công nghệ một cách có trách nhiệm.</p>
+<div class="flex items-center justify-between pt-6 border-t border-surface-variant">
+<span class="text-primary font-bold">800.000đ</span>
+<button class="text-sm font-bold text-on-surface-variant hover:text-primary transition-colors">Chi tiết</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Coach Phương -->
+<section class="bg-white py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-4 -right-4 w-full h-full border-2 border-primary-container rounded-xl translate-x-4 translate-y-4"></div>
+<img class="relative z-10 w-full h-[500px] object-cover rounded-xl shadow-lg" data-alt="Close up portrait of a confident male educator with glasses and a friendly expression in a clean studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi3wLgoMnm44RhXz7anujL9YV4LBGeooTXbB2D1syeU0KCyLTjVaUl8ifEyDaiivoGVCzZp3AzIEW4DGerYQrJh6PotB8doUzPlno7kZTnBFxw75ItVb9EwWSJbJV9l8e0L8FXva59Ma5QvDVWpIl1FadQkWYQzCIoD-9Gc8vP7HWLZmsUiIQUIrKKsw7UoPSxYbECbLrrXBVOkCJoL43HcTmXPAWgPM6cKzr3zcO7pQkmD4Ro00nkBH6vLZkpzHeLzToXaSR1hXE"/>
+</div>
+<div class="space-y-6">
+<span class="text-primary-container font-bold tracking-widest uppercase text-sm">Về Người Sáng Lập</span>
+<h2 class="text-4xl lg:text-5xl font-headline font-bold text-primary">Gặp Gỡ Coach Phương</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        Với hơn 10 năm kinh nghiệm trong lĩnh vực công nghệ và giáo dục, Coach Phương không chỉ là một người thầy, mà còn là một người truyền cảm hứng. Anh tin rằng mỗi học sinh Việt Nam đều có tiềm năng trở thành những nhà kiến tạo công nghệ vĩ đại.
+                    </p>
+<div class="grid grid-cols-2 gap-8 pt-6">
+<div>
+<div class="text-3xl font-headline font-bold text-primary mb-1">10+</div>
+<div class="text-sm text-on-surface-variant">Năm kinh nghiệm</div>
+</div>
+<div>
+<div class="text-3xl font-headline font-bold text-primary mb-1">1,000+</div>
+<div class="text-sm text-on-surface-variant">Học sinh tốt nghiệp</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-center text-4xl font-headline font-bold text-primary mb-16">Phụ huynh &amp; Học sinh nói gì?</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm italic text-on-surface-variant">
+<div class="flex gap-1 text-primary-container mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="mb-8 leading-relaxed">"Con tôi từ một đứa trẻ chỉ thích chơi game đã bắt đầu tò mò về cách các trò chơi đó được tạo ra nhờ AI. Cảm ơn Coach Phương rất nhiều!"</p>
+<div class="flex items-center gap-4 not-italic">
+<div class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up of a smiling mother with a bright natural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmau-Wc-bBJSKwYuW0IvD7ucfwMToWNGhUNoc2bTRlGYk29DXqWZIgcxOZxwfDrhzUL8hS2F0apGIzB5Alw5w1eWU_nZxaO-hUiV9RPXQWzoJ21HEYguINFaMkCMYl3SvjmN3vfqb1OLcHKGA81pFmWQoWJc-8k1GB8_VSn5ictQ9_DFvozJniah3oyStf80kmUdib-4ZJCZxVFLR-NloaqadwhLPCpg7YADX5l2KyTrSx7ICkG-aZNLjQb_jCBzM565olRGyh000"/>
+</div>
+<div>
+<div class="font-bold text-on-surface">Chị Minh Anh</div>
+<div class="text-sm">Phụ huynh học sinh lớp 8</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-primary text-white p-8 rounded-xl shadow-xl lg:scale-105 z-10 italic">
+<div class="flex gap-1 text-on-primary-container mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="mb-8 leading-relaxed text-lg">"Lớp học của Coach Phương rất thú vị. Em không còn thấy AI là cái gì đó quá xa vời nữa, em đã có thể tự viết code cho một chatbot đơn giản."</p>
+<div class="flex items-center gap-4 not-italic">
+<div class="w-12 h-12 rounded-full border-2 border-white/20 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young male student in a blue shirt with a confident smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ-X4Ds0t3kegW8YHuZRqDLWMDMVNro1spyxTqeJoQkZXs9_n66Y_nRTX2_LMK_NWqSo-j__4PmwLrG7PPP1PiuqctfVngqSM-WUCZyH-xd4e7__NWLuHHr5xHj6Nn8RRv1Kedv8sziB6zIVqWLIJf8ginh2IexkkWnvPsygyTQEkKaSsBSq7gMizsBFs8XuGzdquKHL2F2dWEz4e_HepZDxhQZ-iLqoOUGWF3sTFOex6fkRRasFwRqVNLm8LhBX-93gc2OUkO8-M"/>
+</div>
+<div>
+<div class="font-bold">Đức Duy</div>
+<div class="text-sm opacity-80">Học sinh lớp 11</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm italic text-on-surface-variant">
+<div class="flex gap-1 text-primary-container mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="mb-8 leading-relaxed">"Chương trình học rất bài bản và hiện đại. Tôi rất yên tâm khi cho con theo học tại đây để chuẩn bị cho tương lai số hóa."</p>
+<div class="flex items-center gap-4 not-italic">
+<div class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a professional man with a clean beard and friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbqFFzl8Y2VTHG4pbZaO59Sq5OTwpsdxrkr5MKMIgrM0A8TPTAQ1hb6i6CB2rVS3_VBSxPOBtMwvtCSHV2pYIsTbRRHz1H48x2zSw6pePlvoiq4G_ltJPlpgXB92LAfZSy9pzsiA-OoPn_3Z6Jhj83JQ4ytskwTpr_TBI-ykSaVILR9AOQC2Eq8_xPl5L52zlwAaTE-s9BM6VAUQGH-Be3z8QszhlNcpEYTrTtGXHQULdJL446xUk8dNKNmgeE4wZ19yLZqymsGrQ"/>
+</div>
+<div>
+<div class="font-bold text-on-surface">Anh Tuấn</div>
+<div class="text-sm">Phụ huynh học sinh lớp 6</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="hero-gradient rounded-[2rem] p-12 lg:p-24 text-center text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="text-4xl lg:text-6xl font-headline font-bold mb-8">Sẵn Sàng Để Con Bạn Trở Thành Người Dẫn Đầu?</h2>
+<p class="text-xl text-primary-fixed opacity-90 mb-12 leading-relaxed">Đăng ký tư vấn miễn phí ngay hôm nay để bắt đầu hành trình chinh phục AI cùng Coach Phương.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="px-10 py-5 bg-white text-primary rounded-xl font-bold text-xl hover:scale-105 transition-transform">Đăng Ký Tư Vấn</button>
+<button class="px-10 py-5 border-2 border-white/30 text-white rounded-xl font-bold text-xl hover:bg-white/10 transition-colors">Xem Lịch Khai Giảng</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-6">
+<div class="flex flex-col gap-4">
+<div class="text-xl font-bold text-blue-900 dark:text-blue-200">Coach Phương AI</div>
+<p class="text-slate-500 dark:text-slate-500 max-w-xs text-sm">Nền tảng đào tạo AI hàng đầu cho thế hệ trẻ Việt Nam.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-500 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-300 transition-all text-sm opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-300 transition-all text-sm opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-300 transition-all text-sm opacity-80 hover:opacity-100" href="#">AI Ethics</a>
+<a class="text-slate-500 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-300 transition-all text-sm opacity-80 hover:opacity-100" href="#">Support</a>
+</div>
+<div class="text-slate-500 dark:text-slate-500 text-sm">
+                © 2024 Coach Phương AI Mentorship. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
